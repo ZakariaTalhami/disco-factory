@@ -13,7 +13,14 @@ import {
   applyEdgeChanges,
 } from "reactflow";
 
-const initialNodes: Node[] = [];
+const initialNodes: Node[] = [
+  {
+    id: "1",
+    data: { name: "Node 1", description: "Test", type: 1 },
+    position: { x: 5, y: 5 },
+    type: "command",
+  },
+];
 
 const initialEdges: Edge[] = [];
 
