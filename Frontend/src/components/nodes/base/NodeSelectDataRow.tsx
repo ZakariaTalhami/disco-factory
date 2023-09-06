@@ -25,7 +25,7 @@ function NodeSelectDataRow({ label, value, options, onChange }: NodeDateRowProps
       <label htmlFor={label}>{label}:</label>
       <select id={label} name={label} value={value} className="nodrag" onChange={onChange}>
         {options.map((opt) => (
-          <option value={opt.value}>{opt.text}</option>
+          <option key={opt.value} value={opt.value}>{opt.text}</option>
         ))}
       </select>
     </NodeSelectDataRowWrapper>
