@@ -16,9 +16,15 @@ import {
 const initialNodes: Node[] = [
   {
     id: "1",
-    data: { name: "Node 1", description: "Test", type: 1 },
+    data: { name: "say_hello", description: "Says Hello", type: 1 },
     position: { x: 5, y: 5 },
     type: "command",
+  },
+  {
+    id: "2",
+    data: { value: "Hello there!" },
+    position: { x: 150, y: -150 },
+    type: "text",
   },
 ];
 
