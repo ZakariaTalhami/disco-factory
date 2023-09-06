@@ -5,6 +5,7 @@ import useStore, { RFState } from "./state/store";
 import "reactflow/dist/style.css";
 import CommandNode from "./components/nodes/CommandNode";
 import TextNode from "./components/nodes/TextNode";
+import ReplyNode from "./components/nodes/ReplyNode";
 
 const selector = (state: RFState) => ({
   nodes: state.nodes,
@@ -16,7 +17,8 @@ const selector = (state: RFState) => ({
 
 const nodeTypes: NodeTypes = {
   command: CommandNode,
-  text: TextNode
+  text: TextNode,
+  reply: ReplyNode
 };
 
 function Flow({ children }: any) {
